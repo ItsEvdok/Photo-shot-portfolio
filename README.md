@@ -1,2 +1,0 @@
-# Photo-shot-portfolio
- 
