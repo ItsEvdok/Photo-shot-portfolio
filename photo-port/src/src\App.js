@@ -15,8 +15,9 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
-  const [contactSelected, setContactSelected] = useState(false);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
@@ -30,13 +31,12 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-          <Gallery currentCategory={currentCategory}></Gallery>
-          <About></About>
-          <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}></a>
+            <Gallery currentCategory={currentCategory}></Gallery>
+            <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )}
+            <ContactForm></ContactForm>
+          )}
       </main>
     </div>
   );
