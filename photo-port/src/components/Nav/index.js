@@ -6,11 +6,13 @@ function Nav(props) {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
 
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-  } = props;
+    const {
+      categories = [],
+      setCurrentCategory,
+      currentCategory,
+      contactSelected,
+      setContactSelected
+    } = props;
 
   return (
     <header className="flex-row px-1">
